@@ -20,7 +20,7 @@ def to_camel_case(text):
                 list = mod_text.split('_')
         newlistofstrings = ((' ').join(list)).split()
 
-        if newlistofstrings[0][0].isupper() == True:
+        if newlistofstrings[0][0].isupper():
             new_lst = ((' ').join(newlistofstrings).title()).split(' ')
             for i in new_lst:
                 emptystring+= i
@@ -33,7 +33,7 @@ def to_camel_case(text):
     elif '_' in text:
         new_text = (' ').join(text.split('_'))
         newlistofstrings = new_text.split(' ')
-        if newlistofstrings[0][0].isupper() == True:
+        if newlistofstrings[0][0].isupper():
             new_lst = ((' ').join(newlistofstrings).title()).split(' ')
             for i in new_lst:
                 emptystring+= i
